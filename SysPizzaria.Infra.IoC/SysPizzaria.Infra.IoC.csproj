@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SysPizzaria.Application\SysPizzaria.Application.csproj" />
+    <ProjectReference Include="..\SysPizzaria.Domain\SysPizzaria.Domain.csproj" />
+    <ProjectReference Include="..\SysPizzaria.Infra.Data\SysPizzaria.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>
