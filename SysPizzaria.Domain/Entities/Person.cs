@@ -30,6 +30,7 @@ namespace SysPizzaria.Domain.Entities
         private void Validation(string name, string document, string phone)
         {
             DomainValidationException.When(string.IsNullOrEmpty(name), "O Nome deve ser informado!");
+            DomainValidationException.When(name.Length < 3, "O Nome não pode ter menos que 3 caracteres!");
             DomainValidationException.When(string.IsNullOrEmpty(document), "O Documento deve ser informado!");
             DomainValidationException.When(string.IsNullOrEmpty(phone), "O número deve ser informado!");
 
